@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3> Welcome {{username}}! </h3>
+
+<p>The most loved melons are:</p>
+
+    {% for melon in melons %}
+        <div>{{ melon.get("name") }}!</div>
+        <div> <img src={{ melon.get("img") }} width="250" height="200">
+        <div>Loved {{ melon.get("num_loves") }} times! </div>
+        <br>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
